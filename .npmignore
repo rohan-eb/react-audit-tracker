@@ -9,8 +9,7 @@ node_modules/
 .gitignore
 
 # Documentation (not needed in package)
-docs/
-PACKAGE_CONTEXT.md
+dev-docs/
 audit-package-setup/docs-website/
 audit-package-setup/tests/
 audit-package-setup/README.md

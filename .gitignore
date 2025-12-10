@@ -4,9 +4,6 @@ node_modules/
 # build output
 dist/
 
-# documentation (deployed separately to Netlify)
-docs/
-
 # logs
 *.log
 npm-debug.log*
@@ -29,3 +26,6 @@ Thumbs.db
 # environment variables
 .env
 .env.local
+
+# Developer documentation (internal only, not for npm package)
+dev-docs/
