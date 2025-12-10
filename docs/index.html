@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +45,7 @@
 
         .badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             padding: 5px 15px;
             border-radius: 20px;
             margin: 10px 5px;
@@ -54,7 +55,7 @@
         /* Navigation */
         nav {
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -85,7 +86,7 @@
             margin: 40px 0;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
@@ -131,7 +132,7 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102,126,234,0.4);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
         .btn-secondary {
@@ -259,6 +260,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -293,7 +295,7 @@
         <!-- Quick Start -->
         <section id="quick-start">
             <h2>⚡ Quick Start</h2>
-            
+
             <div class="steps">
                 <div class="step">
                     <h3>Install Package</h3>
@@ -379,7 +381,7 @@ function MyComponent() {
         <!-- Setup Guide -->
         <section id="setup">
             <h2>🛠️ Setup Guide</h2>
-            
+
             <h3>Using the CLI Wizard</h3>
             <pre><code>npx audit-tracker-setup</code></pre>
             <p>The wizard will:</p>
@@ -392,7 +394,7 @@ function MyComponent() {
 
             <h3>Manual Setup</h3>
             <p>If you prefer to configure manually, follow these steps:</p>
-            
+
             <div class="step">
                 <h4>1. Install the package</h4>
                 <pre><code>npm install @audit-tracker/react</code></pre>
@@ -448,7 +450,8 @@ function App() {
                     <div class="warning-box">
                         <strong>⚠️ Firebase Setup Required</strong><br>
                         1. Install Firebase SDK: <code>npm install firebase</code><br>
-                        2. Create a Firebase project at <a href="https://console.firebase.google.com">console.firebase.google.com</a><br>
+                        2. Create a Firebase project at <a
+                            href="https://console.firebase.google.com">console.firebase.google.com</a><br>
                         3. Enable Firestore Database<br>
                         4. Configure security rules (see documentation)
                     </div>
@@ -481,24 +484,27 @@ function App() {
         <!-- Storage Modes -->
         <section id="storage-modes">
             <h2>💾 Storage Modes</h2>
-            
+
             <h3>Local Storage</h3>
             <p>Browser-based storage. Perfect for development and small applications.</p>
             <pre><code>&lt;AuditProvider mode="local"&gt;</code></pre>
             <p><strong>Pros:</strong> No setup, instant, works offline<br>
-               <strong>Cons:</strong> Limited to ~5MB, browser-specific, lost on clear cache</p>
+                <strong>Cons:</strong> Limited to ~5MB, browser-specific, lost on clear cache
+            </p>
 
             <h3>Firebase Firestore</h3>
             <p>Cloud-based NoSQL database. Ideal for production applications.</p>
             <pre><code>&lt;AuditProvider mode="firebase" firebaseConfig={config}&gt;</code></pre>
             <p><strong>Pros:</strong> Scalable, real-time, cross-device, persistent<br>
-               <strong>Cons:</strong> Requires Firebase account, costs at scale</p>
+                <strong>Cons:</strong> Requires Firebase account, costs at scale
+            </p>
 
             <h3>REST API</h3>
             <p>Your own backend API. Full control over storage and logic.</p>
             <pre><code>&lt;AuditProvider mode="api" apiConfig={{baseUrl: '...'}}&gt;</code></pre>
             <p><strong>Pros:</strong> Full control, custom logic, any database<br>
-               <strong>Cons:</strong> Requires backend development</p>
+                <strong>Cons:</strong> Requires backend development
+            </p>
         </section>
 
         <!-- Examples -->
@@ -652,31 +658,32 @@ service cloud.firestore {
 
             <h3>TypeScript Errors</h3>
             <div class="info-box">
-                <strong>Solution:</strong> Package includes full TypeScript definitions. Make sure you're using TypeScript 4.0+
+                <strong>Solution:</strong> Package includes full TypeScript definitions. Make sure you're using
+                TypeScript 4.0+
             </div>
         </section>
 
         <!-- Support -->
         <section>
             <h2>💬 Support & Resources</h2>
-            <div class="features">
-                <div class="feature">
-                    <h4>📖 Documentation</h4>
-                    <p><a href="https://www.npmjs.com/package/@audit-tracker/react">npm Package</a></p>
-                    <p><a href="https://rohan-eb.github.io/react-audit-tracker/">Full Documentation</a></p>
-                </div>
-                <div class="feature">
-                    <h4>🐛 Report Issues</h4>
-                    <p><a href="mailto:support@audit-tracker.dev?subject=Bug%20Report">Email Support</a></p>
-                </div>
-                <div class="feature">
-                    <h4>💡 Feature Requests</h4>
-                    <p><a href="mailto:support@audit-tracker.dev?subject=Feature%20Request">Email Support</a></p>
-                </div>
-                <div class="feature">
-                    <h4>📧 Contact</h4>
-                    <p>Email: support@audit-tracker.dev</p>
-                </div>
+            
+            <h3>📖 Documentation</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                <a href="https://rohan-eb.github.io/react-audit-tracker/" class="btn">GitHub Pages</a>
+                <a href="https://www.npmjs.com/package/@audit-tracker/react" class="btn">npm Package</a>
+                <a href="https://github.com/rohan-eb/react-audit-tracker" class="btn">GitHub Repository</a>
+            </div>
+
+            <h3>📧 Need Help?</h3>
+            <p>For bug reports, feature requests, or any questions, contact us:</p>
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; margin-top: 15px;">
+                <p style="font-size: 1.1rem; margin: 0;">
+                    <strong>Email:</strong> 
+                    <a href="mailto:ai.rohanv@gmail.com" style="color: #667eea; text-decoration: none;">ai.rohanv@gmail.com</a>
+                </p>
+                <p style="margin: 10px 0 0 0; color: #666; font-size: 0.95rem;">
+                    We typically respond within 24-48 hours
+                </p>
             </div>
         </section>
     </div>
@@ -685,11 +692,6 @@ service cloud.firestore {
     <footer>
         <div class="container">
             <p>&copy; 2025 @audit-tracker/react. MIT License.</p>
-            <p>
-                <a href="https://www.npmjs.com/package/@audit-tracker/react">npm Package</a> •
-                <a href="https://rohan-eb.github.io/react-audit-tracker/">Documentation</a> •
-                <a href="mailto:support@audit-tracker.dev">Support</a>
-            </p>
         </div>
     </footer>
 
@@ -720,4 +722,5 @@ service cloud.firestore {
         });
     </script>
 </body>
+
 </html>

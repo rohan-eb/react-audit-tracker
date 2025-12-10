@@ -43,7 +43,10 @@
     "firebase",
     "firestore"
   ],
-  "author": "Audit Tracker",
+  "author": {
+    "name": "Rohan Vadsola",
+    "email": "ai.rohanv@gmail.com"
+  },
   "license": "MIT",
   "homepage": "https://rohan-eb.github.io/react-audit-tracker/",
   "repository": {
