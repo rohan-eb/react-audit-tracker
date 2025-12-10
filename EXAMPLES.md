@@ -5,7 +5,7 @@
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { AuditProvider, useAudit, AuditTable } from '@audit-tracker/react';
+import { AuditProvider, useAudit, AuditTable } from 'react-audit-tracker';
 
 // Component that tracks events
 function UserActions() {
@@ -68,7 +68,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 
 ```tsx
 import React from 'react';
-import { AuditProvider, useAudit, AuditTable } from '@audit-tracker/react';
+import { AuditProvider, useAudit, AuditTable } from 'react-audit-tracker';
 
 // Get auth token from your auth system
 const authToken = localStorage.getItem('authToken');
@@ -101,7 +101,7 @@ function DocumentManager() {
 
 ```tsx
 import React from 'react';
-import { AuditProvider, useAudit } from '@audit-tracker/react';
+import { AuditProvider, useAudit } from 'react-audit-tracker';
 
 // Your Firebase configuration
 const firebaseConfig = {
@@ -156,7 +156,7 @@ npm install firebase
 
 ```tsx
 import React from 'react';
-import { AuditTable, ColumnConfig } from '@audit-tracker/react';
+import { AuditTable, ColumnConfig } from 'react-audit-tracker';
 
 const customColumns: ColumnConfig[] = [
   {
@@ -212,7 +212,7 @@ function CustomAuditPage() {
 
 ```tsx
 import React from 'react';
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 
 function FormWithAudit() {
   const { track, loading, error, clearError } = useAudit();
@@ -258,7 +258,7 @@ function FormWithAudit() {
 
 ```tsx
 import React from 'react';
-import { AuditProvider } from '@audit-tracker/react';
+import { AuditProvider } from 'react-audit-tracker';
 
 // Different audit systems for different parts of the app
 function App() {
@@ -278,7 +278,7 @@ function App() {
 
 ```tsx
 import React from 'react';
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 
 function PaymentProcessor() {
   const { track } = useAudit();
@@ -324,7 +324,7 @@ function PaymentProcessor() {
 
 ```tsx
 import React, { useEffect, useState } from 'react';
-import { useAudit, AuditEvent } from '@audit-tracker/react';
+import { useAudit, AuditEvent } from 'react-audit-tracker';
 
 function UserActivityReport({ userId }: { userId: string }) {
   const { query } = useAudit();

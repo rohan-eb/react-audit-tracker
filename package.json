@@ -1,5 +1,5 @@
 {
-  "name": "@audit-tracker/react",
+  "name": "react-audit-tracker",
   "version": "1.0.0",
   "description": "A reusable React audit/activity tracking package with zero-config localStorage support and optional API/Firebase integration",
   "main": "dist/index.js",
@@ -54,7 +54,7 @@
     "url": "https://github.com/rohan-eb/react-audit-tracker.git"
   },
   "bugs": {
-    "url": "https://www.npmjs.com/package/@audit-tracker/react"
+    "url": "https://www.npmjs.com/package/react-audit-tracker"
   },
   "peerDependencies": {
     "firebase": "^10.14.1",

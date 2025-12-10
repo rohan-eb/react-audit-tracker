@@ -272,7 +272,7 @@ Render table with data
 Developers can create custom adapters by implementing the `StorageAdapter` interface:
 
 ```typescript
-import { StorageAdapter, AuditEvent, QueryOptions, PaginatedResult } from '@audit-tracker/react';
+import { StorageAdapter, AuditEvent, QueryOptions, PaginatedResult } from 'react-audit-tracker';
 
 class CustomAdapter implements StorageAdapter {
   async save(event: AuditEvent): Promise<void> {

@@ -26,7 +26,7 @@ function colorize(text, color) {
 
 function showBanner() {
   console.log('\n' + colorize('╔════════════════════════════════════════════╗', 'cyan'));
-  console.log(colorize('║     @audit-tracker/react Setup Wizard     ║', 'cyan'));
+  console.log(colorize('║     react-audit-tracker Setup Wizard     ║', 'cyan'));
   console.log(colorize('╚════════════════════════════════════════════╝', 'cyan') + '\n');
   console.log(colorize('Welcome! Let\'s set up audit tracking in your project.\n', 'bright'));
 }
@@ -90,7 +90,7 @@ function generateProviderCode(mode, config) {
 
   if (mode === '1') {
     // Local Storage
-    providerSetup = `import { AuditProvider } from '@audit-tracker/react';
+    providerSetup = `import { AuditProvider } from 'react-audit-tracker';
 
 function App() {
   return (
@@ -103,7 +103,7 @@ function App() {
 export default App;`;
   } else if (mode === '2') {
     // Firebase
-    providerSetup = `import { AuditProvider } from '@audit-tracker/react';
+    providerSetup = `import { AuditProvider } from 'react-audit-tracker';
 
 const firebaseConfig = {
   config: {
@@ -131,7 +131,7 @@ export default App;
 // npm install firebase`;
   } else if (mode === '3') {
     // REST API
-    providerSetup = `import { AuditProvider } from '@audit-tracker/react';
+    providerSetup = `import { AuditProvider } from 'react-audit-tracker';
 
 const apiConfig = {
   baseUrl: '${config.baseUrl}'
@@ -154,7 +154,7 @@ export default App;`;
 function generateUsageExample() {
   return `// Example: Track user actions in your components
 
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 
 function MyComponent() {
   const { track, loading } = useAudit();
@@ -194,7 +194,7 @@ function MyComponent() {
 function generateDisplayExample() {
   return `// Example: Display audit logs
 
-import { AuditTable } from '@audit-tracker/react';
+import { AuditTable } from 'react-audit-tracker';
 
 function AuditLogsPage() {
   return (
@@ -232,7 +232,7 @@ async function main() {
     console.log(colorize('\n✅ No problem! Here are the manual setup resources:', 'green'));
     console.log('\n📚 Documentation:');
     console.log('   • Full Documentation: https://rohan-eb.github.io/react-audit-tracker/');
-    console.log('   • npm Package: https://www.npmjs.com/package/@audit-tracker/react');
+    console.log('   • npm Package: https://www.npmjs.com/package/react-audit-tracker');
     console.log('   • Integration Guide: Included in package (INTEGRATION_GUIDE.md)');
     console.log('   • Examples: Included in package (EXAMPLES.md)');
     console.log('\n💡 Tip: Run ' + colorize('npx audit-tracker-setup', 'cyan') + ' anytime to use the wizard.\n');
@@ -284,11 +284,11 @@ async function main() {
 
   console.log(colorize('\n📚 Resources:', 'bright'));
   console.log('   • Documentation: https://rohan-eb.github.io/react-audit-tracker/');
-  console.log('   • npm Package: https://www.npmjs.com/package/@audit-tracker/react');
+  console.log('   • npm Package: https://www.npmjs.com/package/react-audit-tracker');
   console.log('   • Integration Guide: Included in package (INTEGRATION_GUIDE.md)');
   console.log('   • Support: Visit npm package page');
 
-  console.log(colorize('\n💚 Thank you for using @audit-tracker/react!\n', 'green'));
+  console.log(colorize('\n💚 Thank you for using react-audit-tracker!\n', 'green'));
 
   rl.close();
 }

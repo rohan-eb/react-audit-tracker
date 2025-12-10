@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@audit-tracker/react - Simple Audit Tracking for React</title>
+    <title>react-audit-tracker - Simple Audit Tracking for React</title>
     <style>
         * {
             margin: 0;
@@ -265,7 +265,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>@audit-tracker/react</h1>
+            <h1>react-audit-tracker</h1>
             <p>Simple, powerful audit tracking for React applications</p>
             <div>
                 <span class="badge">🚀 TypeScript</span>
@@ -275,7 +275,7 @@
             </div>
             <div style="margin-top: 30px;">
                 <a href="#quick-start" class="btn">Get Started</a>
-                <a href="https://www.npmjs.com/package/@audit-tracker/react" class="btn btn-secondary">View on npm</a>
+                <a href="https://www.npmjs.com/package/react-audit-tracker" class="btn btn-secondary">View on npm</a>
             </div>
         </div>
     </header>
@@ -299,7 +299,7 @@
             <div class="steps">
                 <div class="step">
                     <h3>Install Package</h3>
-                    <pre><code>npm install @audit-tracker/react</code></pre>
+                    <pre><code>npm install react-audit-tracker</code></pre>
                 </div>
 
                 <div class="step">
@@ -310,7 +310,7 @@
 
                 <div class="step">
                     <h3>Wrap Your App</h3>
-                    <pre><code>import { AuditProvider } from '@audit-tracker/react';
+                    <pre><code>import { AuditProvider } from 'react-audit-tracker';
 
 function App() {
   return (
@@ -323,7 +323,7 @@ function App() {
 
                 <div class="step">
                     <h3>Track Events</h3>
-                    <pre><code>import { useAudit } from '@audit-tracker/react';
+                    <pre><code>import { useAudit } from 'react-audit-tracker';
 
 function MyComponent() {
   const { track } = useAudit();
@@ -397,7 +397,7 @@ function MyComponent() {
 
             <div class="step">
                 <h4>1. Install the package</h4>
-                <pre><code>npm install @audit-tracker/react</code></pre>
+                <pre><code>npm install react-audit-tracker</code></pre>
             </div>
 
             <div class="step">
@@ -410,7 +410,7 @@ function MyComponent() {
                 </div>
 
                 <div id="tab-local" class="tab-content active">
-                    <pre><code>import { AuditProvider } from '@audit-tracker/react';
+                    <pre><code>import { AuditProvider } from 'react-audit-tracker';
 
 function App() {
   return (
@@ -426,7 +426,7 @@ function App() {
                 </div>
 
                 <div id="tab-firebase" class="tab-content">
-                    <pre><code>import { AuditProvider } from '@audit-tracker/react';
+                    <pre><code>import { AuditProvider } from 'react-audit-tracker';
 
 const firebaseConfig = {
   config: {
@@ -458,7 +458,7 @@ function App() {
                 </div>
 
                 <div id="tab-api" class="tab-content">
-                    <pre><code>import { AuditProvider } from '@audit-tracker/react';
+                    <pre><code>import { AuditProvider } from 'react-audit-tracker';
 
 const apiConfig = {
   baseUrl: 'https://api.example.com'
@@ -512,7 +512,7 @@ function App() {
             <h2>📚 Examples</h2>
 
             <h3>Basic Event Tracking</h3>
-            <pre><code>import { useAudit } from '@audit-tracker/react';
+            <pre><code>import { useAudit } from 'react-audit-tracker';
 
 function UserProfile() {
   const { track } = useAudit();
@@ -553,7 +553,7 @@ function UserProfile() {
 });</code></pre>
 
             <h3>Display Audit Logs</h3>
-            <pre><code>import { AuditTable } from '@audit-tracker/react';
+            <pre><code>import { AuditTable } from 'react-audit-tracker';
 
 function AuditLogsPage() {
   return (
@@ -568,7 +568,7 @@ function AuditLogsPage() {
 }</code></pre>
 
             <h3>Custom Columns</h3>
-            <pre><code>import { AuditTable } from '@audit-tracker/react';
+            <pre><code>import { AuditTable } from 'react-audit-tracker';
 
 const customColumns = [
   {
@@ -670,7 +670,7 @@ service cloud.firestore {
             <h3>📖 Documentation</h3>
             <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
                 <a href="https://rohan-eb.github.io/react-audit-tracker/" class="btn">GitHub Pages</a>
-                <a href="https://www.npmjs.com/package/@audit-tracker/react" class="btn">npm Package</a>
+                <a href="https://www.npmjs.com/package/react-audit-tracker" class="btn">npm Package</a>
                 <a href="https://github.com/rohan-eb/react-audit-tracker" class="btn">GitHub Repository</a>
             </div>
 
@@ -691,7 +691,7 @@ service cloud.firestore {
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 @audit-tracker/react. MIT License.</p>
+            <p>&copy; 2025 react-audit-tracker. MIT License.</p>
         </div>
     </footer>
 

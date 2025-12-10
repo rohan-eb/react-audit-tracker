@@ -16,7 +16,7 @@ This guide will help you integrate audit tracking into your React application st
 ### 1. Install the Package
 
 ```bash
-npm install @audit-tracker/react
+npm install react-audit-tracker
 ```
 
 ### 2. Configure the Provider
@@ -27,7 +27,7 @@ Wrap your root component with `AuditProvider`:
 // src/main.tsx or src/index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { AuditProvider } from '@audit-tracker/react';
+import { AuditProvider } from 'react-audit-tracker';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -51,7 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 Use the `useAudit` hook anywhere in your app:
 
 ```tsx
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 
 function MyComponent() {
   const { track } = useAudit();
@@ -130,7 +130,7 @@ For consistent tracking across your app, create a custom hook:
 
 ```tsx
 // src/hooks/useProjectAudit.ts
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 import { useAuth } from './useAuth'; // Your auth hook
 
 export function useProjectAudit() {
@@ -194,7 +194,7 @@ function ProductManager() {
 
 ```tsx
 // src/pages/AuditLogs.tsx
-import { AuditTable } from '@audit-tracker/react';
+import { AuditTable } from 'react-audit-tracker';
 
 export function AuditLogsPage() {
   return (
@@ -209,7 +209,7 @@ export function AuditLogsPage() {
 ### Custom Columns
 
 ```tsx
-import { AuditTable, ColumnConfig } from '@audit-tracker/react';
+import { AuditTable, ColumnConfig } from 'react-audit-tracker';
 
 const columns: ColumnConfig[] = [
   {
@@ -285,7 +285,7 @@ export const auditFirebaseConfig = {
 
 ```tsx
 // src/main.tsx
-import { AuditProvider } from '@audit-tracker/react';
+import { AuditProvider } from 'react-audit-tracker';
 import { auditFirebaseConfig } from './config/firebase';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -326,7 +326,7 @@ service cloud.firestore {
 
 ```tsx
 // src/main.tsx
-import { AuditProvider } from '@audit-tracker/react';
+import { AuditProvider } from 'react-audit-tracker';
 
 const apiConfig = {
   baseUrl: process.env.VITE_API_URL || 'https://api.example.com',

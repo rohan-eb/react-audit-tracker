@@ -1,4 +1,4 @@
-# @audit-tracker/react
+# react-audit-tracker
 
 A production-ready React audit/activity tracking package with support for localStorage, REST API, and Firebase Cloud Firestore.
 
@@ -21,9 +21,9 @@ A production-ready React audit/activity tracking package with support for localS
 ## Installation
 
 ```bash
-npm install @audit-tracker/react
+npm install react-audit-tracker
 # or
-yarn add @audit-tracker/react
+yarn add react-audit-tracker
 ```
 
 ## Quick Start (Zero Backend)
@@ -33,14 +33,14 @@ The fastest way to get started - no backend required!
 ### Step 1: Install the package
 
 ```bash
-npm install @audit-tracker/react
+npm install react-audit-tracker
 ```
 
 ### Step 2: Wrap your app with AuditProvider
 
 ```tsx
 // src/App.tsx
-import { AuditProvider } from '@audit-tracker/react';
+import { AuditProvider } from 'react-audit-tracker';
 
 function App() {
   return (
@@ -55,7 +55,7 @@ function App() {
 
 ```tsx
 // src/components/MyComponent.tsx
-import { useAudit } from '@audit-tracker/react';
+import { useAudit } from 'react-audit-tracker';
 
 function MyComponent() {
   const { track } = useAudit();
@@ -82,7 +82,7 @@ function MyComponent() {
 
 ```tsx
 // src/pages/AuditLogs.tsx
-import { AuditTable } from '@audit-tracker/react';
+import { AuditTable } from 'react-audit-tracker';
 
 function AuditPage() {
   return (
