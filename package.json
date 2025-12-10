@@ -1,0 +1,72 @@
+{
+  "name": "@audit-tracker/react",
+  "version": "1.0.0",
+  "description": "A reusable React audit/activity tracking package with zero-config localStorage support and optional API/Firebase integration",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "audit-tracker-setup": "./audit-package-setup/bin/setup.cjs"
+  },
+  "files": [
+    "dist",
+    "audit-package-setup/bin",
+    "audit-package-setup/scripts",
+    "README.md",
+    "INTEGRATION_GUIDE.md",
+    "EXAMPLES.md",
+    "ARCHITECTURE.md"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "dev": "rollup -c rollup.config.mjs -w",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node audit-package-setup/scripts/postinstall.cjs"
+  },
+  "keywords": [
+    "react",
+    "audit",
+    "activity-tracking",
+    "logging",
+    "typescript",
+    "localStorage",
+    "firebase",
+    "firestore"
+  ],
+  "author": "Audit Tracker",
+  "license": "MIT",
+  "homepage": "https://react-audit-tracker.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohan-eb/audit-tracker.git"
+  },
+  "bugs": {
+    "url": "https://www.npmjs.com/package/@audit-tracker/react"
+  },
+  "peerDependencies": {
+    "firebase": "^10.14.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.0.0"
+  }
+}

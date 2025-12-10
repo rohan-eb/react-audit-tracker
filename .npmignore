@@ -1,0 +1,23 @@
+# Source files (already built to dist/)
+src/
+tsconfig.json
+rollup.config.js
+
+# Development files
+node_modules/
+.git/
+.gitignore
+
+# Documentation (not needed in package)
+docs/
+PACKAGE_CONTEXT.md
+audit-package-setup/docs-website/
+audit-package-setup/tests/
+audit-package-setup/README.md
+audit-package-setup/ENHANCED_ERRORS.md
+audit-package-setup/IMPLEMENTATION_SUMMARY.md
+
+# Build artifacts
+*.log
+npm-debug.log*
+.DS_Store
