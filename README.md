@@ -26,6 +26,21 @@ npm install react-audit-tracker
 yarn add react-audit-tracker
 ```
 
+### 🎯 Quick Setup (Optional but Recommended)
+
+After installation, run the setup wizard:
+
+```bash
+npx audit-tracker-setup
+```
+
+This interactive wizard will:
+- Guide you through storage mode selection
+- Generate ready-to-use setup files
+- Provide code examples
+
+**Note:** If you don't see a setup message after installation, npm may have skipped the postinstall script. Just run `npx audit-tracker-setup` manually.
+
 ## Quick Start (Zero Backend)
 
 The fastest way to get started - no backend required!

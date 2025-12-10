@@ -1,5 +1,16 @@
 #!/usr/bin/env node
 
+// Skip if running in the package's own directory (during development)
+const path = require('path');
+const isPackageRoot = __dirname.includes('audit-package-setup' + path.sep + 'scripts');
+const isDevMode = process.env.npm_config_global !== 'true' && 
+                  process.cwd().endsWith('react-audit-tracker');
+
+if (isDevMode && isPackageRoot) {
+  // Running in package development, skip
+  process.exit(0);
+}
+
 const colors = {
   reset: '\x1b[0m',
   bright: '\x1b[1m',
