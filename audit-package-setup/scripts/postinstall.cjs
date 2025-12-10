@@ -32,7 +32,7 @@ console.log('      ' + colorize('const { track } = useAudit();', 'cyan'));
 console.log('      ' + colorize('await track({ action: "...", entity: "...", ... });', 'cyan') + '\n');
 
 console.log(colorize('📚 Resources:', 'bright'));
-console.log('   • Documentation: ' + colorize('https://react-audit-tracker.netlify.app/', 'blue'));
+console.log('   • Documentation: ' + colorize('https://rohan-eb.github.io/react-audit-tracker/', 'blue'));
 console.log('   • npm Package: ' + colorize('https://www.npmjs.com/package/@audit-tracker/react', 'blue'));
 console.log('   • Integration Guide: Included in package (INTEGRATION_GUIDE.md)');
 console.log('   • Examples: Included in package (EXAMPLES.md)' + '\n');

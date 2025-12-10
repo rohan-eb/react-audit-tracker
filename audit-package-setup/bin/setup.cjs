@@ -231,7 +231,7 @@ async function main() {
   if (mode === '4') {
     console.log(colorize('\n✅ No problem! Here are the manual setup resources:', 'green'));
     console.log('\n📚 Documentation:');
-    console.log('   • Full Documentation: https://react-audit-tracker.netlify.app/');
+    console.log('   • Full Documentation: https://rohan-eb.github.io/react-audit-tracker/');
     console.log('   • npm Package: https://www.npmjs.com/package/@audit-tracker/react');
     console.log('   • Integration Guide: Included in package (INTEGRATION_GUIDE.md)');
     console.log('   • Examples: Included in package (EXAMPLES.md)');
@@ -283,7 +283,7 @@ async function main() {
   }
 
   console.log(colorize('\n📚 Resources:', 'bright'));
-  console.log('   • Documentation: https://react-audit-tracker.netlify.app/');
+  console.log('   • Documentation: https://rohan-eb.github.io/react-audit-tracker/');
   console.log('   • npm Package: https://www.npmjs.com/package/@audit-tracker/react');
   console.log('   • Integration Guide: Included in package (INTEGRATION_GUIDE.md)');
   console.log('   • Support: Visit npm package page');
@@ -301,6 +301,6 @@ process.on('SIGINT', () => {
 
 main().catch((error) => {
   console.error(colorize('\n❌ Setup failed:', 'red'), error.message);
-  console.log(colorize('\n📚 Please refer to INTEGRATION_GUIDE.md included in the package or visit: https://react-audit-tracker.netlify.app/\n', 'yellow'));
+  console.log(colorize('\n📚 Please refer to INTEGRATION_GUIDE.md included in the package or visit: https://rohan-eb.github.io/react-audit-tracker/\n', 'yellow'));
   process.exit(1);
 });
