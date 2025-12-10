@@ -1,6 +1,6 @@
 {
   "name": "react-audit-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A reusable React audit/activity tracking package with zero-config localStorage support and optional API/Firebase integration",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
