@@ -2,6 +2,16 @@
 
 This guide will help you integrate audit tracking into your React application step-by-step.
 
+## 🎯 Try Live First!
+
+Before diving into the guide, try our interactive demos:
+
+- 🚀 **[Basic Demo (LocalStorage)](https://stackblitz.com/edit/vitejs-vite-ghmb2czt)** - See it working in 5 seconds
+- 🔥 **[Firebase Demo](https://stackblitz.com/edit/vitejs-vite-dd7ftpnn)** - Cloud integration example
+- 🌐 **[API Demo](https://stackblitz.com/edit/vitejs-vite-vetcqadd)** - Backend API setup
+
+---
+
 ## Table of Contents
 
 1. [Basic Setup](#basic-setup)

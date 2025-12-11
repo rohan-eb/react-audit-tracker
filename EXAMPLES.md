@@ -1,5 +1,17 @@
 # React Audit Tracker - Usage Examples
 
+## 🎯 Interactive Live Demos
+
+**Want to see these examples running live?** Try our StackBlitz demos:
+
+- 🚀 **[Basic Demo](https://stackblitz.com/edit/vitejs-vite-ghmb2czt)** - LocalStorage examples running live
+- 🔥 **[Firebase Demo](https://stackblitz.com/edit/vitejs-vite-dd7ftpnn)** - Firestore integration
+- 🌐 **[API Demo](https://stackblitz.com/edit/vitejs-vite-vetcqadd)** - REST API examples
+
+Click any demo to open a fully working environment with editable code!
+
+---
+
 ## Example 1: Zero Config (LocalStorage Only)
 
 ```tsx

@@ -34,14 +34,16 @@
     "postinstall": "node audit-package-setup/scripts/postinstall.cjs"
   },
   "keywords": [
-    "react",
     "audit",
-    "activity-tracking",
-    "logging",
-    "typescript",
-    "localStorage",
-    "firebase",
-    "firestore"
+    "audit-log",
+    "activity-log",
+    "event-tracking",
+    "change-history",
+    "user-actions",
+    "logger",
+    "react",
+    "react-library",
+    "typescript"
   ],
   "author": {
     "name": "Rohan Vadsola",

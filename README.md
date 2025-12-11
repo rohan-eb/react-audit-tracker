@@ -2,6 +2,16 @@
 
 A production-ready React audit/activity tracking package with support for localStorage, REST API, and Firebase Cloud Firestore.
 
+## 🎯 Live Demos
+
+Try the package instantly in your browser - no installation required!
+
+- 🚀 **[Basic Demo (LocalStorage)](https://stackblitz.com/edit/vitejs-vite-ghmb2czt)** - Zero backend, works immediately
+- 🔥 **[Firebase Demo](https://stackblitz.com/edit/vitejs-vite-dd7ftpnn)** - Cloud Firestore integration
+- 🌐 **[API Demo](https://stackblitz.com/edit/vitejs-vite-vetcqadd)** - REST API backend setup
+
+> **Click any demo above** to see react-audit-tracker in action with full source code!
+
 ## 📚 Documentation
 
 - **[Integration Guide](./INTEGRATION_GUIDE.md)** - Step-by-step guide to integrate audit tracking into your app

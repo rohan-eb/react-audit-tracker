@@ -29,3 +29,6 @@ Thumbs.db
 
 # Developer documentation (internal only, not for npm package)
 dev-docs/
+
+# StackBlitz demos (managed manually on platform, not in repo)
+stackblitz-demos/
